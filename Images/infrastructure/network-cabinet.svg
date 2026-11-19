@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <radialGradient id="bgN" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </radialGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bgN)"/>
+  
+  <!-- Network cabinet wall-mounted -->
+  <g transform="translate(80, 40)">
+    <rect x="0" y="0" width="440" height="320" rx="8" fill="#141414" stroke="#3a3a3a" stroke-width="2"/>
+    <!-- Cabinet door frame -->
+    <rect x="10" y="10" width="420" height="300" rx="6" fill="#111" stroke="#2a2a2a" stroke-width="1.5"/>
+    <!-- Rail system -->
+    <rect x="20" y="20" width="10" height="280" fill="#161616" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="410" y="20" width="10" height="280" fill="#161616" stroke="#2a2a2a" stroke-width="1"/>
+    
+    <!-- Units installed -->
+    <!-- Router 1U -->
+    <rect x="34" y="26" width="372" height="18" rx="2" fill="#181818" stroke="#3a3a3a" stroke-width="1"/>
+    <rect x="38" y="29" width="12" height="12" rx="1" fill="#111" stroke="#444" stroke-width="0.5"/>
+    <rect x="54" y="29" width="12" height="12" rx="1" fill="#111" stroke="#444" stroke-width="0.5"/>
+    <rect x="70" y="29" width="12" height="12" rx="1" fill="#111" stroke="#444" stroke-width="0.5"/>
+    <text x="300" y="38" font-family="'JetBrains Mono', monospace" font-size="6" fill="#444" text-anchor="middle">INTERNET ROUTER</text>
+    <circle cx="390" cy="35" r="3" fill="#2a2a2a" stroke="#444" stroke-width="0.5"/>
+    
+    <!-- Switch 1U -->
+    <rect x="34" y="48" width="372" height="18" rx="2" fill="#181818" stroke="#3a3a3a" stroke-width="1"/>
+    <g fill="#222" stroke="#333" stroke-width="0.5">
+      <rect x="38" y="51" width="8" height="6" rx="1"/>
+      <rect x="50" y="51" width="8" height="6" rx="1"/>
+      <rect x="62" y="51" width="8" height="6" rx="1"/>
+      <rect x="74" y="51" width="8" height="6" rx="1"/>
+      <rect x="86" y="51" width="8" height="6" rx="1"/>
+      <rect x="98" y="51" width="8" height="6" rx="1"/>
+      <rect x="110" y="51" width="8" height="6" rx="1"/>
+      <rect x="122" y="51" width="8" height="6" rx="1"/>
+    </g>
+    <text x="300" y="60" font-family="'JetBrains Mono', monospace" font-size="6" fill="#444" text-anchor="middle">MANAGED SWITCH 24P</text>
+    
+    <!-- Blank 1U -->
+    <rect x="34" y="70" width="372" height="18" rx="2" fill="#111" stroke="#1e1e1e" stroke-width="0.5"/>
+    
+    <!-- Patch panel -->
+    <rect x="34" y="92" width="372" height="18" rx="2" fill="#181818" stroke="#3a3a3a" stroke-width="1"/>
+    <g fill="#1a1a1a" stroke="#333" stroke-width="0.5">
+      <rect x="38" y="95" width="7" height="10" rx="1"/>
+      <rect x="48" y="95" width="7" height="10" rx="1"/>
+      <rect x="58" y="95" width="7" height="10" rx="1"/>
+      <rect x="68" y="95" width="7" height="10" rx="1"/>
+      <rect x="78" y="95" width="7" height="10" rx="1"/>
+      <rect x="88" y="95" width="7" height="10" rx="1"/>
+      <rect x="98" y="95" width="7" height="10" rx="1"/>
+      <rect x="108" y="95" width="7" height="10" rx="1"/>
+      <rect x="118" y="95" width="7" height="10" rx="1"/>
+      <rect x="128" y="95" width="7" height="10" rx="1"/>
+      <rect x="138" y="95" width="7" height="10" rx="1"/>
+      <rect x="148" y="95" width="7" height="10" rx="1"/>
+    </g>
+    <text x="300" y="104" font-family="'JetBrains Mono', monospace" font-size="6" fill="#444" text-anchor="middle">PATCH PANEL 24P</text>
+    
+    <!-- Cable manager 1U -->
+    <rect x="34" y="114" width="372" height="12" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="0.5"/>
+    
+    <!-- Blank units -->
+    <rect x="34" y="130" width="372" height="18" rx="2" fill="#111" stroke="#1e1e1e" stroke-width="0.5"/>
+    <rect x="34" y="152" width="372" height="18" rx="2" fill="#111" stroke="#1e1e1e" stroke-width="0.5"/>
+    
+    <!-- UPS 2U -->
+    <rect x="34" y="174" width="372" height="36" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="40" y="180" width="80" height="24" rx="2" fill="#111" stroke="#2a2a2a" stroke-width="0.5"/>
+    <text x="230" y="196" font-family="'JetBrains Mono', monospace" font-size="7" fill="#2a2a2a" text-anchor="middle">UPS 1500VA</text>
+    
+    <!-- Cable management section -->
+    <text x="220" y="240" font-family="'JetBrains Mono', monospace" font-size="6" fill="#2a2a2a" text-anchor="middle">CABLE MANAGEMENT AREA</text>
+    
+    <!-- Ethernet cables visible in lower section -->
+    <g opacity="0.4">
+      <path d="M 50 220 C 50 250, 60 265, 80 270" stroke="#555" stroke-width="2" fill="none"/>
+      <path d="M 70 220 C 70 255, 85 268, 100 272" stroke="#444" stroke-width="2" fill="none"/>
+      <path d="M 90 220 C 90 258, 108 270, 120 274" stroke="#555" stroke-width="2" fill="none"/>
+      <path d="M 110 220 C 110 262, 130 272, 150 276" stroke="#333" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+  
+  <!-- Cabinet label -->
+  <text x="300" y="385" font-family="'JetBrains Mono', monospace" font-size="9" fill="#333" text-anchor="middle" letter-spacing="3">NETWORK CABINET · WALL-MOUNT INSTALLATION</text>
+  
+  <rect x="10" y="10" width="25" height="2" fill="#1e1e1e"/>
+  <rect x="10" y="10" width="2" height="25" fill="#1e1e1e"/>
+  <rect x="565" y="10" width="25" height="2" fill="#1e1e1e"/>
+  <rect x="588" y="10" width="2" height="25" fill="#1e1e1e"/>
+  <rect x="10" y="388" width="25" height="2" fill="#1e1e1e"/>
+  <rect x="10" y="363" width="2" height="27" fill="#1e1e1e"/>
+  <rect x="565" y="388" width="25" height="2" fill="#1e1e1e"/>
+  <rect x="588" y="363" width="2" height="27" fill="#1e1e1e"/>
+</svg>

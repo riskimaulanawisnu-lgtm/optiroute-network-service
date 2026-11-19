@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <radialGradient id="bgP" cx="50%" cy="40%" r="80%">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </radialGradient>
+    <linearGradient id="cableG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="30%" stop-color="#888"/>
+      <stop offset="70%" stop-color="#888"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bgP)"/>
+
+  <!-- Patch panel main unit -->
+  <g transform="translate(80, 100)">
+    <rect x="0" y="0" width="640" height="80" rx="6" fill="#1a1a1a" stroke="#444" stroke-width="2"/>
+    <!-- Ear brackets -->
+    <rect x="0" y="10" width="18" height="60" rx="3" fill="#141414" stroke="#3a3a3a" stroke-width="1"/>
+    <rect x="622" y="10" width="18" height="60" rx="3" fill="#141414" stroke="#3a3a3a" stroke-width="1"/>
+    <!-- Screw holes on brackets -->
+    <circle cx="9" cy="20" r="3" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <circle cx="9" cy="60" r="3" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <circle cx="631" cy="20" r="3" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <circle cx="631" cy="60" r="3" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+
+    <!-- Port row - 24 ports -->
+    <g>
+      <!-- Port labels row top -->
+      <text x="30" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">1</text>
+      <text x="54" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">2</text>
+      <text x="78" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">3</text>
+      <text x="102" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">4</text>
+      <text x="126" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">5</text>
+      <text x="150" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">6</text>
+      <text x="174" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">7</text>
+      <text x="198" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">8</text>
+      <text x="222" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">9</text>
+      <text x="244" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">10</text>
+      <text x="268" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">11</text>
+      <text x="292" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">12</text>
+      <text x="316" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">13</text>
+      <text x="340" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">14</text>
+      <text x="364" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">15</text>
+      <text x="388" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">16</text>
+      <text x="412" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">17</text>
+      <text x="436" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">18</text>
+      <text x="460" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">19</text>
+      <text x="484" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">20</text>
+      <text x="508" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">21</text>
+      <text x="532" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">22</text>
+      <text x="556" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">23</text>
+      <text x="580" y="18" font-family="'JetBrains Mono', monospace" font-size="5" fill="#333">24</text>
+
+      <!-- RJ45 ports -->
+      <g fill="#111" stroke="#444" stroke-width="1">
+        <rect x="26" y="22" width="16" height="12" rx="2"/>
+        <rect x="50" y="22" width="16" height="12" rx="2"/>
+        <rect x="74" y="22" width="16" height="12" rx="2"/>
+        <rect x="98" y="22" width="16" height="12" rx="2"/>
+        <rect x="122" y="22" width="16" height="12" rx="2"/>
+        <rect x="146" y="22" width="16" height="12" rx="2"/>
+        <rect x="170" y="22" width="16" height="12" rx="2"/>
+        <rect x="194" y="22" width="16" height="12" rx="2"/>
+        <rect x="218" y="22" width="16" height="12" rx="2"/>
+        <rect x="242" y="22" width="16" height="12" rx="2"/>
+        <rect x="266" y="22" width="16" height="12" rx="2"/>
+        <rect x="290" y="22" width="16" height="12" rx="2"/>
+        <rect x="314" y="22" width="16" height="12" rx="2"/>
+        <rect x="338" y="22" width="16" height="12" rx="2"/>
+        <rect x="362" y="22" width="16" height="12" rx="2"/>
+        <rect x="386" y="22" width="16" height="12" rx="2"/>
+        <rect x="410" y="22" width="16" height="12" rx="2"/>
+        <rect x="434" y="22" width="16" height="12" rx="2"/>
+        <rect x="458" y="22" width="16" height="12" rx="2"/>
+        <rect x="482" y="22" width="16" height="12" rx="2"/>
+        <rect x="506" y="22" width="16" height="12" rx="2"/>
+        <rect x="530" y="22" width="16" height="12" rx="2"/>
+        <rect x="554" y="22" width="16" height="12" rx="2"/>
+        <rect x="578" y="22" width="16" height="12" rx="2"/>
+      </g>
+
+      <!-- LED status per port -->
+      <g>
+        <circle cx="34" cy="40" r="2" fill="#444"/>
+        <circle cx="58" cy="40" r="2" fill="#555"/>
+        <circle cx="82" cy="40" r="2" fill="#444"/>
+        <circle cx="106" cy="40" r="2" fill="#555"/>
+        <circle cx="130" cy="40" r="2" fill="#444"/>
+        <circle cx="154" cy="40" r="2" fill="#555"/>
+        <circle cx="178" cy="40" r="2" fill="#444"/>
+        <circle cx="202" cy="40" r="2" fill="#555"/>
+        <circle cx="226" cy="40" r="2" fill="#444"/>
+        <circle cx="250" cy="40" r="2" fill="#333"/>
+        <circle cx="274" cy="40" r="2" fill="#555"/>
+        <circle cx="298" cy="40" r="2" fill="#444"/>
+        <circle cx="322" cy="40" r="2" fill="#555"/>
+        <circle cx="346" cy="40" r="2" fill="#444"/>
+        <circle cx="370" cy="40" r="2" fill="#333"/>
+        <circle cx="394" cy="40" r="2" fill="#555"/>
+        <circle cx="418" cy="40" r="2" fill="#444"/>
+        <circle cx="442" cy="40" r="2" fill="#555"/>
+        <circle cx="466" cy="40" r="2" fill="#444"/>
+        <circle cx="490" cy="40" r="2" fill="#555"/>
+        <circle cx="514" cy="40" r="2" fill="#444"/>
+        <circle cx="538" cy="40" r="2" fill="#555"/>
+        <circle cx="562" cy="40" r="2" fill="#333"/>
+        <circle cx="586" cy="40" r="2" fill="#444"/>
+      </g>
+
+      <!-- Port labels bottom -->
+      <text x="26" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PC-01</text>
+      <text x="50" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PC-02</text>
+      <text x="74" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PC-03</text>
+      <text x="98" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PC-04</text>
+      <text x="122" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PC-05</text>
+      <text x="146" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PC-06</text>
+      <text x="170" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">PRN-1</text>
+      <text x="194" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">SRV-1</text>
+      <text x="218" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">SRV-2</text>
+      <text x="242" y="58" font-family="'JetBrains Mono', monospace" font-size="4.5" fill="#2a2a2a">FREE</text>
+    </g>
+
+    <text x="320" y="73" font-family="'JetBrains Mono', monospace" font-size="6" fill="#2a2a2a" text-anchor="middle">PATCH PANEL 24-PORT · CAT6A · OPTIROUTE STANDARD</text>
+  </g>
+
+  <!-- Ethernet cables flowing from ports -->
+  <g opacity="0.6">
+    <path d="M 106 182 C 106 230, 100 280, 80 350" stroke="#555" stroke-width="3" fill="none"/>
+    <path d="M 130 182 C 130 240, 125 300, 110 380" stroke="#444" stroke-width="3" fill="none"/>
+    <path d="M 154 182 C 154 250, 150 310, 150 400" stroke="#555" stroke-width="2.5" fill="none"/>
+    <path d="M 178 182 C 178 230, 180 280, 200 360" stroke="#333" stroke-width="2.5" fill="none"/>
+    <path d="M 202 182 C 202 240, 210 290, 240 350" stroke="#555" stroke-width="2.5" fill="none"/>
+    <path d="M 226 182 C 226 240, 240 300, 280 380" stroke="#444" stroke-width="2.5" fill="none"/>
+    <path d="M 250 182 C 250 230, 265 270, 310 320" stroke="#555" stroke-width="2" fill="none"/>
+    <path d="M 274 182 C 274 220, 290 260, 340 300" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M 298 182 C 298 220, 320 260, 370 300" stroke="#444" stroke-width="2" fill="none"/>
+    <path d="M 322 182 C 322 230, 340 280, 390 330" stroke="#555" stroke-width="2.5" fill="none"/>
+    <path d="M 346 182 C 346 240, 350 290, 420 360" stroke="#333" stroke-width="2.5" fill="none"/>
+    <path d="M 370 182 C 370 230, 400 270, 450 320" stroke="#555" stroke-width="2" fill="none"/>
+    <path d="M 394 182 C 394 230, 430 260, 480 300" stroke="#444" stroke-width="2" fill="none"/>
+    <path d="M 418 182 C 418 230, 460 280, 510 340" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M 442 182 C 442 230, 490 290, 540 360" stroke="#555" stroke-width="2.5" fill="none"/>
+    <path d="M 466 182 C 466 230, 510 280, 570 340" stroke="#444" stroke-width="2.5" fill="none"/>
+    <path d="M 490 182 C 490 230, 540 280, 600 350" stroke="#555" stroke-width="3" fill="none"/>
+    <path d="M 514 182 C 514 220, 560 260, 630 320" stroke="#333" stroke-width="3" fill="none"/>
+    <path d="M 538 182 C 538 220, 580 260, 650 320" stroke="#444" stroke-width="2.5" fill="none"/>
+    <path d="M 562 182 C 562 220, 600 270, 670 340" stroke="#555" stroke-width="2" fill="none"/>
+    <path d="M 586 182 C 586 230, 620 290, 680 370" stroke="#333" stroke-width="2" fill="none"/>
+    <path d="M 610 182 C 610 230, 640 300, 700 390" stroke="#444" stroke-width="2.5" fill="none"/>
+    <path d="M 634 182 C 634 220, 670 270, 720 340" stroke="#555" stroke-width="3" fill="none"/>
+    <path d="M 658 182 C 658 220, 690 270, 730 330" stroke="#333" stroke-width="3" fill="none"/>
+  </g>
+
+  <!-- Cable labels -->
+  <g transform="translate(80, 420)" opacity="0.5">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace" font-size="6" fill="#444">CAT6A SFTP · 10GbE capable · T568B Termination Standard</text>
+    <text x="0" y="16" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333">Color coded: Gray=data  Blue=VoIP  Red=Management</text>
+  </g>
+
+  <text x="400" y="478" font-family="'JetBrains Mono', monospace" font-size="11" fill="#444" text-anchor="middle" letter-spacing="3">PATCH PANEL · CABLE MANAGEMENT SYSTEM</text>
+
+  <rect x="20" y="20" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="20" y="20" width="2" height="30" fill="#2a2a2a"/>
+  <rect x="750" y="20" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="778" y="20" width="2" height="30" fill="#2a2a2a"/>
+  <rect x="20" y="478" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="20" y="450" width="2" height="30" fill="#2a2a2a"/>
+  <rect x="750" y="478" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="778" y="450" width="2" height="30" fill="#2a2a2a"/>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <radialGradient id="bgT" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#121212"/>
+      <stop offset="100%" stop-color="#060606"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bgT)"/>
+
+  <!-- Terminal / diagnostic screen main -->
+  <g transform="translate(80, 60)">
+    <rect x="0" y="0" width="440" height="360" rx="8" fill="#0a0a0a" stroke="#333" stroke-width="1.5"/>
+    <!-- Title bar -->
+    <rect x="0" y="0" width="440" height="28" rx="8" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="0" y="14" width="440" height="14" fill="#141414"/>
+    <circle cx="16" cy="14" r="5" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="0.5"/>
+    <circle cx="30" cy="14" r="5" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="0.5"/>
+    <circle cx="44" cy="14" r="5" fill="#2a2a2a" stroke="#3a3a3a" stroke-width="0.5"/>
+    <text x="220" y="18" font-family="'JetBrains Mono', monospace" font-size="8" fill="#555" text-anchor="middle">NETWORK DIAGNOSTIC CONSOLE</text>
+
+    <!-- Terminal output -->
+    <text x="16" y="52" font-family="'JetBrains Mono', monospace" font-size="8" fill="#888">$ ping 192.168.1.1 -t</text>
+    <text x="16" y="66" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">Reply from 192.168.1.1: bytes=32 time=1ms TTL=64</text>
+    <text x="16" y="80" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">Reply from 192.168.1.1: bytes=32 time=1ms TTL=64</text>
+    <text x="16" y="94" font-family="'JetBrains Mono', monospace" font-size="8" fill="#444">Request timeout for icmp_seq 3</text>
+    <text x="16" y="108" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">Reply from 192.168.1.1: bytes=32 time=4ms TTL=64</text>
+
+    <text x="16" y="126" font-family="'JetBrains Mono', monospace" font-size="8" fill="#888">$ tracert 8.8.8.8</text>
+    <text x="16" y="140" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">1    1 ms    1 ms    1 ms  192.168.1.1</text>
+    <text x="16" y="154" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">2   12 ms   11 ms   13 ms  10.0.0.1</text>
+    <text x="16" y="168" font-family="'JetBrains Mono', monospace" font-size="8" fill="#444">3    *       *       *      Request timed out.</text>
+    <text x="16" y="182" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">4   28 ms   30 ms   27 ms  72.14.215.165</text>
+    <text x="16" y="196" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">5   32 ms   29 ms   31 ms  8.8.8.8</text>
+
+    <text x="16" y="214" font-family="'JetBrains Mono', monospace" font-size="8" fill="#888">$ netstat -an | grep LISTEN</text>
+    <text x="16" y="228" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">TCP  0.0.0.0:80    LISTENING</text>
+    <text x="16" y="242" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">TCP  0.0.0.0:443   LISTENING</text>
+    <text x="16" y="256" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">TCP  0.0.0.0:3389  LISTENING</text>
+
+    <text x="16" y="274" font-family="'JetBrains Mono', monospace" font-size="8" fill="#888">$ iperf3 -c 192.168.1.100</text>
+    <text x="16" y="288" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">Connecting to host 192.168.1.100 port 5201</text>
+    <text x="16" y="302" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">[SUM]  0.00-10.00 sec  1.09 GBytes  937 Mbits/sec</text>
+    <text x="16" y="316" font-family="'JetBrains Mono', monospace" font-size="8" fill="#888">Bandwidth: 937 Mbits/sec</text>
+
+    <text x="16" y="338" font-family="'JetBrains Mono', monospace" font-size="8" fill="#666">$ nmap -sV 192.168.0.0/24</text>
+    <text x="16" y="352" font-family="'JetBrains Mono', monospace" font-size="7" fill="#888">█</text>
+  </g>
+
+  <!-- Right panel - network map -->
+  <g transform="translate(555, 60)" opacity="0.8">
+    <rect x="0" y="0" width="210" height="360" rx="6" fill="#0a0a0a" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="10" y="20" font-family="'JetBrains Mono', monospace" font-size="7" fill="#555">NETWORK HEALTH MAP</text>
+    <line x1="0" y1="28" x2="210" y2="28" stroke="#1a1a1a" stroke-width="1"/>
+
+    <!-- Topology mini view -->
+    <circle cx="105" cy="80" r="18" fill="#141414" stroke="#444" stroke-width="1.5"/>
+    <text x="105" y="78" font-family="'JetBrains Mono', monospace" font-size="5" fill="#888" text-anchor="middle">ROUTER</text>
+    <text x="105" y="88" font-family="'JetBrains Mono', monospace" font-size="4" fill="#666" text-anchor="middle">●  OK</text>
+
+    <line x1="105" y1="98" x2="60" y2="140" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="105" y1="98" x2="150" y2="140" stroke="#2a2a2a" stroke-width="1" stroke-dasharray="3 3"/>
+    <line x1="105" y1="98" x2="105" y2="140" stroke="#444" stroke-width="1.5"/>
+
+    <circle cx="60" cy="155" r="14" fill="#141414" stroke="#333" stroke-width="1"/>
+    <text x="60" y="153" font-family="'JetBrains Mono', monospace" font-size="4" fill="#666" text-anchor="middle">SWITCH</text>
+    <text x="60" y="161" font-family="'JetBrains Mono', monospace" font-size="3.5" fill="#555" text-anchor="middle">● OK</text>
+
+    <circle cx="105" cy="155" r="14" fill="#141414" stroke="#444" stroke-width="1.5"/>
+    <text x="105" y="153" font-family="'JetBrains Mono', monospace" font-size="4" fill="#666" text-anchor="middle">SERVER</text>
+    <text x="105" y="161" font-family="'JetBrains Mono', monospace" font-size="3.5" fill="#555" text-anchor="middle">● OK</text>
+
+    <circle cx="150" cy="155" r="14" fill="#141414" stroke="#333" stroke-width="1"/>
+    <text x="150" y="153" font-family="'JetBrains Mono', monospace" font-size="4" fill="#666" text-anchor="middle">AP-01</text>
+    <text x="150" y="161" font-family="'JetBrains Mono', monospace" font-size="3.5" fill="#444" text-anchor="middle">⚠ Weak</text>
+
+    <!-- Issue log -->
+    <line x1="0" y1="185" x2="210" y2="185" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="10" y="202" font-family="'JetBrains Mono', monospace" font-size="6" fill="#555">ISSUE LOG</text>
+    <text x="10" y="218" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#444">[WARN] AP-01 signal low</text>
+    <text x="10" y="231" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#333">[INFO] DHCP lease renewed</text>
+    <text x="10" y="244" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#444">[WARN] Packet loss 2.4%</text>
+    <text x="10" y="257" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#333">[OK]   Firewall active</text>
+    <text x="10" y="270" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#444">[WARN] Port 8080 exposed</text>
+
+    <!-- Fix actions -->
+    <line x1="0" y1="280" x2="210" y2="280" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="10" y="298" font-family="'JetBrains Mono', monospace" font-size="6" fill="#555">ACTIONS TAKEN</text>
+    <text x="10" y="314" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#444">✓ Repositioned AP-01</text>
+    <text x="10" y="328" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#444">✓ Updated firmware v2.1.4</text>
+    <text x="10" y="342" font-family="'JetBrains Mono', monospace" font-size="5.5" fill="#444">✓ Closed port 8080</text>
+  </g>
+
+  <text x="400" y="460" font-family="'JetBrains Mono', monospace" font-size="11" fill="#444" text-anchor="middle" letter-spacing="3">TROUBLESHOOTING JARINGAN · DIAGNOSTIC</text>
+
+  <rect x="20" y="20" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="20" y="20" width="2" height="30" fill="#2a2a2a"/>
+  <rect x="750" y="20" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="778" y="20" width="2" height="30" fill="#2a2a2a"/>
+  <rect x="20" y="458" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="20" y="430" width="2" height="30" fill="#2a2a2a"/>
+  <rect x="750" y="458" width="30" height="2" fill="#2a2a2a"/>
+  <rect x="778" y="430" width="2" height="30" fill="#2a2a2a"/>
+</svg>

@@ -1,0 +1,272 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="50%" r="80%">
+      <stop offset="0%" stop-color="#141414"/>
+      <stop offset="100%" stop-color="#070707"/>
+    </radialGradient>
+    <linearGradient id="rackFace" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e1e"/>
+      <stop offset="100%" stop-color="#0d0d0d"/>
+    </linearGradient>
+    <linearGradient id="cableBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="50%" stop-color="#999"/>
+      <stop offset="100%" stop-color="#2a2a2a"/>
+    </linearGradient>
+    <radialGradient id="floorLight" cx="50%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#aaa" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#aaa" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur4">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  <rect width="1200" height="600" fill="url(#floorLight)"/>
+
+  <!-- Floor perspective lines -->
+  <line x1="600" y1="600" x2="0" y2="440" stroke="#1a1a1a" stroke-width="1" opacity="0.4"/>
+  <line x1="600" y1="600" x2="1200" y2="440" stroke="#1a1a1a" stroke-width="1" opacity="0.4"/>
+  <line x1="0" y1="500" x2="1200" y2="500" stroke="#1a1a1a" stroke-width="1" opacity="0.3"/>
+  <line x1="0" y1="470" x2="1200" y2="470" stroke="#1a1a1a" stroke-width="1" opacity="0.2"/>
+
+  <!-- Rack row 1 (left) -->
+  <g transform="translate(80, 60)">
+    <!-- Rack frame -->
+    <rect x="0" y="0" width="140" height="480" rx="6" fill="url(#rackFace)" stroke="#333" stroke-width="2"/>
+    <!-- Left rail -->
+    <rect x="12" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <!-- Right rail -->
+    <rect x="118" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <!-- Units -->
+    <g>
+      <!-- 1U patch panel -->
+      <rect x="26" y="22" width="88" height="16" rx="1" fill="#181818" stroke="#3a3a3a" stroke-width="0.5"/>
+      <g fill="#2a2a2a">
+        <rect x="30" y="26" width="5" height="8" rx="1"/>
+        <rect x="38" y="26" width="5" height="8" rx="1"/>
+        <rect x="46" y="26" width="5" height="8" rx="1"/>
+        <rect x="54" y="26" width="5" height="8" rx="1"/>
+        <rect x="62" y="26" width="5" height="8" rx="1"/>
+        <rect x="70" y="26" width="5" height="8" rx="1"/>
+        <rect x="78" y="26" width="5" height="8" rx="1"/>
+        <rect x="86" y="26" width="5" height="8" rx="1"/>
+        <rect x="94" y="26" width="5" height="8" rx="1"/>
+        <rect x="102" y="26" width="5" height="8" rx="1"/>
+      </g>
+      <!-- 2U server -->
+      <rect x="26" y="42" width="88" height="32" rx="2" fill="#141414" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="30" y="46" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="50" y="46" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+      <circle cx="90" cy="52" r="3" fill="#222" stroke="#444" stroke-width="0.5"/>
+      <circle cx="98" cy="52" r="3" fill="#2a2a2a" stroke="#444" stroke-width="0.5"/>
+      <circle cx="90" cy="62" r="3" fill="#222"/>
+      <!-- More units... -->
+      <rect x="26" y="78" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="98" width="88" height="32" rx="2" fill="#141414" stroke="#3a3a3a" stroke-width="1"/>
+      <rect x="30" y="102" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="50" y="102" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="134" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="154" width="88" height="16" rx="1" fill="#141414" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="174" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+      <rect x="30" y="178" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="210" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="230" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+      <rect x="26" y="266" width="88" height="50" rx="2" fill="#121212" stroke="#2a2a2a" stroke-width="1"/>
+      <text x="70" y="296" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333" text-anchor="middle">UPS 2200VA</text>
+      <rect x="26" y="320" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="340" width="88" height="16" rx="1" fill="#141414" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="360" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+      <rect x="26" y="396" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+      <rect x="26" y="416" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+      <!-- Cable management bottom -->
+      <rect x="12" y="452" width="116" height="22" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    </g>
+    <text x="70" y="500" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333" text-anchor="middle">RACK A-01</text>
+  </g>
+
+  <!-- Rack row 2 (second rack) -->
+  <g transform="translate(240, 60)">
+    <rect x="0" y="0" width="140" height="480" rx="6" fill="url(#rackFace)" stroke="#333" stroke-width="2"/>
+    <rect x="12" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="118" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="22" width="88" height="16" rx="1" fill="#181818" stroke="#3a3a3a" stroke-width="0.5"/>
+    <g fill="#2a2a2a">
+      <rect x="30" y="26" width="5" height="8" rx="1"/>
+      <rect x="38" y="26" width="5" height="8" rx="1"/>
+      <rect x="46" y="26" width="5" height="8" rx="1"/>
+      <rect x="54" y="26" width="5" height="8" rx="1"/>
+      <rect x="62" y="26" width="5" height="8" rx="1"/>
+      <rect x="70" y="26" width="5" height="8" rx="1"/>
+    </g>
+    <rect x="26" y="42" width="88" height="32" rx="2" fill="#141414" stroke="#3a3a3a" stroke-width="1"/>
+    <rect x="30" y="46" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="50" y="46" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="78" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="114" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="134" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="30" y="138" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="170" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="206" width="88" height="50" rx="2" fill="#121212" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="260" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="280" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="316" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="352" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="372" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="408" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="12" y="452" width="116" height="22" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="70" y="500" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333" text-anchor="middle">RACK A-02</text>
+  </g>
+
+  <!-- Cable management waterfall (between racks) -->
+  <g opacity="0.5">
+    <!-- Multiple ethernet cables flowing between racks -->
+    <path d="M 220 80 C 230 80, 235 90, 240 90" stroke="#444" stroke-width="3" fill="none"/>
+    <path d="M 220 100 C 230 100, 235 110, 240 110" stroke="#555" stroke-width="3" fill="none"/>
+    <path d="M 220 120 C 230 120, 235 130, 240 130" stroke="#333" stroke-width="3" fill="none"/>
+    <path d="M 220 150 C 230 150, 235 160, 240 160" stroke="#444" stroke-width="3" fill="none"/>
+    <path d="M 220 180 C 230 180, 235 190, 240 190" stroke="#555" stroke-width="2" fill="none"/>
+    <path d="M 220 210 C 230 210, 235 220, 240 220" stroke="#333" stroke-width="2" fill="none"/>
+  </g>
+
+  <!-- Center rack (prominent) -->
+  <g transform="translate(430, 20)">
+    <rect x="0" y="0" width="160" height="540" rx="8" fill="#181818" stroke="#444" stroke-width="2.5"/>
+    <rect x="14" y="18" width="12" height="504" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="134" y="18" width="12" height="504" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+
+    <!-- Dense unit population -->
+    <g fill="#141414" stroke="#3a3a3a" stroke-width="0.5">
+      <rect x="30" y="24" width="100" height="16" rx="1"/>
+      <rect x="30" y="44" width="100" height="38" rx="2"/>
+      <rect x="30" y="86" width="100" height="38" rx="2"/>
+      <rect x="30" y="128" width="100" height="16" rx="1"/>
+      <rect x="30" y="148" width="100" height="38" rx="2"/>
+      <rect x="30" y="190" width="100" height="38" rx="2"/>
+      <rect x="30" y="232" width="100" height="16" rx="1"/>
+      <rect x="30" y="252" width="100" height="38" rx="2"/>
+      <rect x="30" y="294" width="100" height="16" rx="1"/>
+      <rect x="30" y="314" width="100" height="60" rx="2"/>
+      <rect x="30" y="378" width="100" height="38" rx="2"/>
+      <rect x="30" y="420" width="100" height="38" rx="2"/>
+      <rect x="30" y="462" width="100" height="16" rx="1"/>
+      <rect x="30" y="482" width="100" height="38" rx="2"/>
+    </g>
+
+    <!-- Drive bays on 2U servers -->
+    <g fill="#0d0d0d" stroke="#222" stroke-width="0.5">
+      <rect x="34" y="48" width="18" height="30" rx="1"/>
+      <rect x="56" y="48" width="18" height="30" rx="1"/>
+      <rect x="78" y="48" width="18" height="30" rx="1"/>
+      <rect x="34" y="90" width="18" height="30" rx="1"/>
+      <rect x="56" y="90" width="18" height="30" rx="1"/>
+      <rect x="78" y="90" width="18" height="30" rx="1"/>
+    </g>
+
+    <!-- LED indicators -->
+    <g fill="#333">
+      <circle cx="110" cy="55" r="2.5" stroke="#444" stroke-width="0.5"/>
+      <circle cx="118" cy="55" r="2.5" stroke="#444" stroke-width="0.5"/>
+      <circle cx="126" cy="55" r="2.5" stroke="#444" stroke-width="0.5"/>
+      <circle cx="110" cy="97" r="2.5" stroke="#444" stroke-width="0.5"/>
+      <circle cx="118" cy="97" r="2.5" stroke="#444" stroke-width="0.5"/>
+    </g>
+
+    <!-- UPS unit -->
+    <text x="80" y="348" font-family="'JetBrains Mono', monospace" font-size="7" fill="#2a2a2a" text-anchor="middle">UPS 3000VA</text>
+
+    <!-- Cable tray bottom -->
+    <rect x="14" y="522" width="132" height="12" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="80" y="560" font-family="'JetBrains Mono', monospace" font-size="7" fill="#444" text-anchor="middle">RACK CORE-01</text>
+  </g>
+
+  <!-- Rack 4 -->
+  <g transform="translate(610, 60)">
+    <rect x="0" y="0" width="140" height="480" rx="6" fill="url(#rackFace)" stroke="#333" stroke-width="2"/>
+    <rect x="12" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="118" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="22" width="88" height="16" rx="1" fill="#181818" stroke="#3a3a3a" stroke-width="0.5"/>
+    <rect x="26" y="42" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="30" y="46" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="50" y="46" width="16" height="24" rx="1" fill="#0d0d0d" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="78" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="98" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="134" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="170" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="190" width="88" height="50" rx="2" fill="#121212" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="244" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="280" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="316" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="336" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="372" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="408" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="428" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="12" y="452" width="116" height="22" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="70" y="500" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333" text-anchor="middle">RACK B-01</text>
+  </g>
+
+  <!-- Rack 5 -->
+  <g transform="translate(770, 60)">
+    <rect x="0" y="0" width="140" height="480" rx="6" fill="url(#rackFace)" stroke="#333" stroke-width="2"/>
+    <rect x="12" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="118" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="22" width="88" height="16" rx="1" fill="#181818" stroke="#3a3a3a" stroke-width="0.5"/>
+    <rect x="26" y="42" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="78" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="114" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="134" width="88" height="50" rx="2" fill="#121212" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="188" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="224" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="260" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="280" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="316" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="352" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="372" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="408" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="12" y="452" width="116" height="22" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="70" y="500" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333" text-anchor="middle">RACK B-02</text>
+  </g>
+
+  <!-- Rack 6 (rightmost) -->
+  <g transform="translate(940, 60)">
+    <rect x="0" y="0" width="140" height="480" rx="6" fill="url(#rackFace)" stroke="#333" stroke-width="2"/>
+    <rect x="12" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="118" y="16" width="10" height="448" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="22" width="88" height="16" rx="1" fill="#181818" stroke="#3a3a3a" stroke-width="0.5"/>
+    <rect x="26" y="42" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="78" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="98" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="134" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="170" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="190" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="226" width="88" height="50" rx="2" fill="#121212" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="26" y="280" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="316" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="352" width="88" height="16" rx="1" fill="#181818" stroke="#2a2a2a" stroke-width="0.5"/>
+    <rect x="26" y="372" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="26" y="408" width="88" height="32" rx="2" fill="#141414" stroke="#333" stroke-width="1"/>
+    <rect x="12" y="452" width="116" height="22" rx="2" fill="#141414" stroke="#2a2a2a" stroke-width="1"/>
+    <text x="70" y="500" font-family="'JetBrains Mono', monospace" font-size="6" fill="#333" text-anchor="middle">RACK C-01</text>
+  </g>
+
+  <!-- Ceiling cable trays -->
+  <rect x="80" y="40" width="1000" height="12" rx="4" fill="#111" stroke="#2a2a2a" stroke-width="1" opacity="0.6"/>
+  <!-- Cable bundles in tray -->
+  <line x1="90" y1="46" x2="1070" y2="46" stroke="#333" stroke-width="2" opacity="0.5"/>
+  <line x1="90" y1="49" x2="1070" y2="49" stroke="#444" stroke-width="1.5" opacity="0.4"/>
+  <line x1="90" y1="52" x2="1070" y2="52" stroke="#333" stroke-width="1" opacity="0.3"/>
+
+  <!-- Floor labels -->
+  <text x="600" y="580" font-family="'JetBrains Mono', monospace" font-size="12" fill="#333" text-anchor="middle" letter-spacing="4">RUANG SERVER · SERVER ROOM INFRASTRUCTURE</text>
+
+  <!-- Corner marks -->
+  <rect x="20" y="20" width="40" height="2" fill="#222"/>
+  <rect x="20" y="20" width="2" height="40" fill="#222"/>
+  <rect x="1140" y="20" width="40" height="2" fill="#222"/>
+  <rect x="1178" y="20" width="2" height="40" fill="#222"/>
+  <rect x="20" y="578" width="40" height="2" fill="#222"/>
+  <rect x="20" y="540" width="2" height="40" fill="#222"/>
+  <rect x="1140" y="578" width="40" height="2" fill="#222"/>
+  <rect x="1178" y="540" width="2" height="40" fill="#222"/>
+</svg>
